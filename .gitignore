@@ -1,0 +1,50 @@
+# .gitignore
+# --- Build outputs ---
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+
+# --- IDE files ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+.vscode/
+*.code-workspace
+.factorypath
+
+# --- Maven ---
+.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Test outputs ---
+test-output/
+allure-results/
+
+# --- Screenshots (keep directory, ignore files) ---
+screenshots/*.png
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Environment / secrets ---
+.env
+*.env
+
+# --- Local Resume drafts ---
+resume*
+*resume*
+*.pdf
+*.tex
