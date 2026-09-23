@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Dream Portal QA Automation Suite" verbose="2" parallel="none">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- ============================================================ -->
+    <!-- Part 1: Core UI Functional Tests                              -->
+    <!-- ============================================================ -->
+
+    <test name="Home Page Tests - index.html">
+        <classes>
+            <class name="com.wingify.qa.tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="Dreams Diary Tests - dreams-diary.html">
+        <classes>
+            <class name="com.wingify.qa.tests.DreamsDiaryTest"/>
+        </classes>
+    </test>
+
+    <test name="Dreams Summary Tests - dreams-total.html">
+        <classes>
+            <class name="com.wingify.qa.tests.DreamsTotalTest"/>
+        </classes>
+    </test>
+
+    <!-- ============================================================ -->
+    <!-- Bonus: Cross-Page Data Consistency Validation                  -->
+    <!-- ============================================================ -->
+
+    <test name="Cross-Page Validation Tests">
+        <classes>
+            <class name="com.wingify.qa.tests.CrossPageValidationTest"/>
+        </classes>
+    </test>
+
+    <!-- ============================================================ -->
+    <!-- Part 2: AI-Based Dream Classification (Optional/Bonus)         -->
+    <!-- ============================================================ -->
+
+    <test name="AI Classification Tests (Bonus)">
+        <classes>
+            <class name="com.wingify.qa.tests.AIClassificationTest"/>
+        </classes>
+    </test>
+
+</suite>
